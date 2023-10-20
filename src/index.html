@@ -1,0 +1,184 @@
+
+<!-- Se puede agregar codigo JavaScript a un doc HTML dentro del tag Script -->
+
+<script>
+    // Aqui adentro va Javascript!
+    // Ojo que las variables pueden tomar cualquier tipo de dato
+    var texto = "Texto";
+    var num = 69;
+    var boolean = true;
+    var undef;
+
+    const laConstante = 7.2;
+    console.log("Algo sobre un ", texto, ", el numero ", num, "y una var ", undef);
+
+    var array = ["algo", "nose"];
+    console.log("El shift quito y devolvio: ", array.shift);
+    // Agrega el elemento al inicio y devuelve nueva longitud del array
+    array.unshift("Unshifteado");
+
+    function ejecutaAlgo(var1, var2){
+        console.log("Funcion Ejecutada");
+
+        return var1 + var2;
+    }
+
+    console.log( ejecutaAlgo(1,1) , " wow  ", JSON.stringify(array) );
+
+    //Objetos Json
+    var persona = {
+        "name": "Gaven",
+        "age": 22,
+        "lastValue": true
+    };
+    console.log( persona.name ," - - - ", persona[0] );
+
+    persona.descripcion = "Nuevo atributo";
+    delete persona.lastValue;
+    var tieneAtributo = persona.hasOwnProperty("name");
+
+    console.log( tieneAtributo );
+
+    function buscaElementos(elemento){
+        var objetoElementos = {
+            "elemento1": "num1",
+            "elemento2": "num2",
+            "elemento3": "num3"
+        };
+
+        return objetoElementos [elemento];
+    }
+
+    console.log( buscaElementos("elemento1") );
+
+    // Objetos Complejos y anidados
+
+    var playerParty = [
+        {
+            "name": "freeman",
+            "level": 99,
+            "keyITems": [
+                "lvl1_key",
+                "lvl2_key",
+                "lvl3_key"
+            ],
+            "mainWeapon":{
+                "weaponName": "crowbar",
+                "damage": 99
+            },
+            "headGear": {
+                "gearName": "glasses",
+                "defense": 1,
+                "buffs": [
+                    "crit boost",
+                    "accuracy boost"
+                ]
+            }
+        },
+        {
+            "name": "alyx",
+            "level": 67
+        }
+    ]
+    console.log( playerParty[0] );  // Nos devuelve a Freeman como un objeto
+    console.log( playerParty[0].level );  // Nos devuelve su nivel
+    console.log( playerParty[0]["level"] );  // Nos devuelve su nivel
+    console.log( playerParty[0].mainWeapon.weaponName );
+    console.log( playerParty[0].headGear.buffs[0] );
+
+    // Miscelaneo
+    var rango = 100;
+    console.log( Math.random() );   // Num random entre 0 y 1
+    console.log( Math.floor( Math.random * rango ) );   // num random entre 0 y 99
+
+    function randomNumInRange(min, max){
+        return (Math.random * ( max - min + 1 ) ) + min;
+    }
+
+    var wea1 = "laWea";
+    var wea1 = "laOtraWea";
+    let wea1 = "laWeaUnica"
+    console.log( wea1 );
+
+    const fecha = () => new Date();
+
+    const sumaDosNums = (x,y) => x+y;
+    conso.log( sumaDosNums(1,2) );
+
+    // Estas funciones pueden tener valores default
+    const defaultValue = (x, y, defNum = 4) => x+y *defNum
+
+    function restOfParameters(...args){
+        console.log( args );
+    }
+
+    restOfParameters( [1, 2, 3], [4, 5, 6] );
+
+    // Lo contrario ahora
+    const numeros = [1, 2, 3];
+
+    function sumar (x,y,z){
+        return x+y+z;
+    }
+
+    console.log( sumar( ...numeros() ) );
+
+    // Desestructurarizacion
+
+    const usuario = {
+        nombre: "El Sujeto",
+        edad: 22
+    };
+
+    //const nombre = usuario.nombre;
+    //const edad = usuario.edad;
+    const {nombre, edad} = usuario;
+
+    var coordenadas = {
+        x: 4,
+        y: 5,
+        z: 6
+    };
+
+    const {x,y,z} = coordenadas;
+
+    const strawHats = {
+        luffy: {
+            edadSH: 20,
+            correoSH: "pirateking@one.piece.com"
+        }
+    };
+
+    const { luffy:{edadSH: edadLuffy, correoSH: correoLuffy} } = strawHats;
+
+    console.log(edadSH, " no esta definido, pero ", edadLuffy, " si lo esta");
+
+    // Entonces, en este ejemplo:
+    const PRONOSTICO_LOCAL = {
+        "ayer": {
+            minima: 16,
+            maxima: 27
+        },
+        "hoy": {
+            minima: 20,
+            maxima: 24
+        },
+        "mañana":{
+            minima: 22,
+            maxima: 30
+        }
+    };
+
+    const { hoy: {minima: minHoy, maxima: maxHoy} } = PRONOSTICO_LOCAL;
+    console.log(minHoy);
+
+    // Ahora, desestructurar un arreglo.
+    var a;
+    var b;
+
+    [a, b, , ,c] = [1, 2, 3, 4, 5];
+
+    console.log(a, "\n", b)
+
+
+</script>
