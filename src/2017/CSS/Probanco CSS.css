@@ -1,0 +1,164 @@
+/*
+para un texto universal (todo) se usa el selector universal que cambia el
+aspecto de todos los elementos
+*{
+margin:0;
+padding:0;  
+}
+*/
+/*ahora veremos un poco los selectores*/
+
+/*para evitar tener que copiar y pegar codigos y selector por separado
+ para un mismo objetivo, se juntan como se vera a continuacion*/
+ 
+ h1,h2{
+	 color:yellow;
+ }
+ 
+ /*font-size se usa para el tamaño*/
+ h1{
+	 font-size:35;
+ }
+  h2{
+	 font-size:30;
+ }
+ 
+ /*los selectores descendentes se usan para modificar un objetivo o algo ESPECIFICO*/
+ 
+ p a{
+	 font-size 30px;
+	 color:white;
+ }
+ 
+ /* para las clases/id(obsoleto) se usa un punto antes del nombre designado*/
+ .yellow{
+	 color:yellow;
+ }
+ 
+ /*Ahora veremos unidades de medida*/
+ /*Unidades de medida hay muchas, como los pixeles que miden altura, anchura, margenes
+ tamaño de fuente, etc. Hay 2 Unidades de medida, la absoluta y la relativa
+las absolutas nos permiten establecer un valor fijo, inmodificable
+las relativas son flexibles puesto que se adaptan mejor al trabajo */
+
+/*relativas hay por ejemplo los pixeles, em o rem*/
+ /*los % se usan para cajas(recomendadamente)*/
+ body{
+	 font-size:30px;
+ }
+ 
+ /*1 em representa el valor del elemento padre en su fuente (en este caso 1em = 30px*/
+ p{
+	 font-size:1em;
+ }
+ 
+ /*eñ % es util para el diseño responsive, el cual se trata del diseño web adaptable
+ por ejemplo, a un movil */
+ p span {
+	 background:#000;
+	 color:#fff;
+	 width:4%;
+ }
+ 
+ /*y las absolutas son por ej. cm, mm y in(pulgadas) que normalmente nadie usa*/
+ 
+ /*Ahora veremos las unidades de color, hay 5 formas: con palabras clave,
+ colores del sistema,rgb exadecimal, rgm numerico y rgb exadecimal */
+ 
+ /*viendo las palabras clave hay varias como aqua, green, white, black, etc,
+no las ejemplificaremos ya que es sencillo y se puede ver en el codigo de este
+ documento, y pues este no se usa por el poco control del color exacto que queremos */
+ 
+ /*ahora veremos decimales, en este caso se usan los valores rgb (ver una web para
+ obtener valores ejemplo */
+ h3{
+	 color:rgb(94, 255, 0);
+ }
+ /*El metodo exadecimal es el mas comun y usado, solo se copia el "codigo" #
+ej:
+  color:ffffff; (ver codigo, se ha usado en algunas secciones) */
+
+/*El metodo porcentual es igual al rgb, solo que especificamos un porcentaje
+Ej:
+   color:rgb(10%, 25%, 32%);
+*/
+/*para opacidad se usa rgba, igual a lo anterior, pero se añade un valor extra, sus valores
+van desde el 0 al 1 con decimales */
+h4{
+	color:rgb(255, 171, 0, .5);
+}
+
+/*Ahora veremos los modelos de caja, divididos en secciones div¿*/
+div p{
+	width:25%;
+	height:; /*no se usa normalmente, ya que es automatico*/
+	background:#ff8000;
+	margin:20px 50px; /*esta propiedad nos da margenes entre cada div, pueden ser
+	1 o 2 medidas, 1 general o 2 para arriba/abajo y lados*/
+	padding:30px; /*margen interior*/
+	border:10px solid #000; /*al borde se le da medida, tipo de borde y color*/
+	/*  display:inline; o display:inline-block; es para ubicar los bloques juntos en
+     una linea	*/
+}
+
+/*Ahora veremos los fondos*/
+
+/*para poner imagenes de fondo, se usa el comando a continuacion, en caso de que
+este en una carpeta anterior, se usan .. para retroceder, ej ../Mi proyecto/archivo */
+body{
+	background:url(Background.jpg);
+	/* background-repeat:no-repeat; con este codigo el fondo no se repite al hacer zoom 
+	background-repeat:repeat-x; para repetir horizontal
+	background-repeat:repeat-y; para vertical
+	estos 3 ya no son tan usados, puesto que ahora hay degradados en css*/
+	background-attachment:fixed; /*con esto el fondo se mantiene "fixed" o 
+	fijo en la pantalla*/
+	/* background-position:500px% 20%; se usa para ubicar el fondo, se pueden
+	palabras como center o medidas, las cuales cuentan desde la esquina superior
+	izquierda hacia la direccion contraria, el primer valor hacia la derecha y el
+	segundo hacia abajo*/
+}
+
+/*ahora veremos el posicionamiento de cajas*/
+
+/*static deja los valores invalidos*/
+
+.caja2{
+	position:relative; /*relative nos permite posisionar la caja y desplazarla desde
+	                   su posision original, dejando su espacio vacio*/
+	top:;			   
+	bottom:50px;		   
+	right:;
+    left:100px;	
+}
+.caja4{
+	position:absolute; /*absolute mueve los numeros para rellenar el vacio que
+	dejo este al moverse*/
+	top:;			   
+	bottom:10pxpx;		   
+	right:;
+    left:250;	
+	color:black;
+}
+/*como ya vimos, igualmente se puede usar fixed, el cual la deja fija en el fondo
+por asi decirlo*/
+
+div h2{
+	font-size:50px;
+	float:left; /*se usa hacer diseños con columnas o avanzados, tambien para rodear
+	con texto una imagen */
+	/*clear:both; se usa para */
+}
+
+/*Ahora veremos texto y tipografia en el siguiente documento de "oribando css"*/
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

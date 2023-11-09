@@ -1,0 +1,57 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+      <meta charset="UTF-8">
+	  <title>Beta Gaven web</title>
+ <head>
+ <body>
+ <!--actualmente div no se usa mucho para todo un sitio, solo para contenido grafico como imagenes o videos-->
+     <div>
+	     <img src="" alt="">
+		  <video src="" alt="">
+	  </div>
+	  
+	  <!--un encabezado con header es codigo semantico (los buscadores toman en cuenta nuestro contenido)
+	   dentro de esta van logotipos y un menu normalmente-->
+	  <header>
+	     <div>
+		     <img src="Imagenes/Logo De Gaven.jpg" width="225">
+		 </div>
+		 <!--la etiqueta nav nos permite decirle al navegador/buscador que aqui hay un menu de navegacion-->
+		 <nav>
+		     <ul>
+			     <li><a href="#">Inicio</a></li>
+				 <li><a href="#">categorias</a></li>
+				 <li><a href="#">acerca de</a></li>
+			 </ul>
+		 </nav>
+	  </header>
+	  
+	  <!--section se encarga de encerrar el contenido principal y secundario en uno solo con la etiqueta
+	  wrapper que es como un contenedor, main es el contenido principal (articulos), aside es el contenido no importante para el buscador
+      pero si de interes para el usuario-->
+	  <section class="wrapper">
+	     <section class="main"></section>
+		     <article>
+			     <!--article es para agregar articulos que google tome en cuenta, se puede hacer con div
+				   pero google no lo toma en cuenta, ademas solo debemos hacer de h2 para abajo, una pagina solo
+				   debe tener un solo h1, o google penaliza las busquedas-->
+			     <h2> titulo de nuestra pagina</h2>
+				 <p>Un texto sin sentido que un internauta leera sin detenerse por que tiene
+				 curiosidad de saber como terminara, pero quedara confundido al no terminar como el
+				 patata<p>
+				 
+			 </article>
+			 
+		  <aside>
+		     <h2>sidebar</h2>
+			   <p>Hey, quieres publicidad shingona? apoko no carnalito :v</P>
+		  </aside>
+	  </section>
+	  <!--footer nos permite decirle al navegador que tenemos un pie de pagina, aqui va info de quienes somos, derechos reservados, etc.-->
+	  <footer>
+	     <p>Gabriel ignacio venegas aravena - Gaven/Gavenjr/Gaven-jr/Gav3n/Gavenjr/Gav3n-jr 2017 todos los derechos reservados</p>
+	  </footer>
+	  
+ </body>
+ </html>

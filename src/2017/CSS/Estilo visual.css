@@ -1,0 +1,13 @@
+body {
+	background:#ffffff;
+	color:#000;
+	}
+	/*comentario en css*/
+	/*esto conforma una regla css, desde inicio a fin,
+body {background:#000000;}
+ 	una regla es todo el conjunto de grupos que hacemos para darle estilo
+	a un elemento, se compone de un selector(que aspecto queremos modificar) 
+	Body hace referencia a todo el documento, background es nuestra propiedad
+	y es que queremos modificar del selector y el valor es un color exadecimal 
+	RGB (rrggbb)*/
+	/*color cambia el color de la fuente*/

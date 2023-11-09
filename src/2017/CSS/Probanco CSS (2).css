@@ -1,0 +1,92 @@
+/*Ahora veremos texto y tipografia*/
+
+/*font family es para ver el tipo de fuente o tipografia, las comillas se usan
+para fuentes con espacios, f-weight es para la anchura del texto,
+text-align se usa para alinear el texto donde queramos, tambien aplica a
+imagenes, line-height se usa para dejar espacio entre lines (interlineado)
+,text-decoration decora el texto, t-transform nos permite establecer 
+matusculas y minusculas, letter-spacing nos modifica el espacio entre letras y
+word-spacing lo modifica entre palabras, text-shadow nos permite agregar
+sombra al texto */
+p{
+	font-family:Arial, Helvetica, Sans-serif, "Myriad Pro";
+	font-size:20px;
+	font-weight:bold;
+	text-align:left;
+	line-height:35px;
+	text-decoration:none; /*underline subraya el texto, overline pone
+subrayados sobre el texto, line-through tacha el texto */
+    text-transform:;/*capitalize pone en mayuscula la primera letra de cada
+palabra, uppercase nos pone todo en mayuscula y lowercase es su contrario */
+    letter-spacing:normal;
+	word-spacing:2.5px;
+	text-shadow:0px 0px 0px #000; /*horizontal, vertical, tamaño, color*/
+}
+
+h1{
+	font-weight:normal;
+	text-align:center;
+}
+
+/*Ahora veremos los enlaces*/
+
+a{
+	font-size:15px;
+	text-decoration:none; /*se usa para quitar el subrayado a los enlaces*/
+	/*color:#000;*/
+	margin:15px 15px 15px 15px;/*arriba, derecha, abajo, izquierda*/
+	padding:10px 20px 10px 10px;/*espaciado entre texto y caja*/
+}
+
+/*para los enlaces que no hayamos visitado, no se usa normalmente*/
+a:link{
+	color:;
+}
+
+/*se usa para dar efecto a algo cuando el mouse o raton pase por sobre el, 
+normalmente es el mas usado */
+a:hover{
+	text-decoration:underline;
+	font-size:20;
+	background:#000;
+	color:fff;
+}
+
+/*se usa para que va a pasar cuando se da un click*/
+a:active{
+	background:#ff8000;
+}
+
+/*se usa para como se mostraran los enlaces visitados*/
+a:visited{
+	color:#000;
+}
+
+/*Ahora veremos las imagenes*/
+
+/*para las medidas, se toman en cuenta las de css antes de las de html*/
+img{
+	height:auto;
+	margin:auto; /*nos permite centrar el contenido, pero debe ser un 
+contenedor con un display block	*/
+	width:800px;
+	display:block;
+	border-radius:5%;
+	box-shadow:15px 15px 15px #ccc;
+	padding:10px;
+	border:1px solid #000;
+}
+
+/**/
+div{
+	/*background:#ccc;*/
+	width:100%;
+}
+
+/*Ahora veremos listas*/
+
+
+
+
+
+

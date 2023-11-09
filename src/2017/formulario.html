@@ -1,0 +1,38 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+	  <title>Document</title>
+ <head>
+ <body>
+ <!--Para formularios se usa form, puede recibir varios atributos-->
+ <!--action recibe como valor una url que procesa los valores del formulario-->
+ <!--form action="datos.php" method="get" es ejemplo-->
+ <!--los campos de texto que reciben nombres por ej, empiezan como imput y tipo de entrada-->
+ <!--size no se recomienda para dar el tamaño, se usa css, maxlength es para el maximo de caracteres-->
+ <!--name se usa en cualquier elemento de un formulario, establece al server que valor se pide, y se reconoce como todo el imput-->
+ <!--id es para el codigo en label for="Urname" que asigna el texto al codigo imput-->
+   <form >
+	 <label for="Urname">Ingrese su nombre:</label>
+	 <input type="text" placeholder="Tu nombre" size="" maxlength="9999" name="UserName" id="Urname" class="">
+	 <label for="pass">Ingrese su contraseña:</label>
+	 <input type="password" placeholder="Contraseña123" id="pass">
+	 <label for="mail">Ingresa tu correo electronico</label>
+	 <input type="email" placeholder="TuCorreo@gmail.com" id="mail">
+	 <br />
+	 <input type="checkbox" name="" id="">Eres Programador?
+	 <input type="radio" name="" id="">Hombre
+	 <input type="radio" name="" id="">Mujer
+	 <input type="button" value="Click">
+	 <input type="submit">
+	 <select name="" id="">
+	    <option value="Chile">chile</option>
+		 <option value="Usa">Estados Unidos</option>
+	 </select>
+	 <input type="color" name="" id="">
+	 <input type="range" name="" id="">
+	</form> 
+
+ <a target="_blank" href="index.html" title="Ir a la web principal">Volver a la web principal</A>
+ </body>
+ <html>
